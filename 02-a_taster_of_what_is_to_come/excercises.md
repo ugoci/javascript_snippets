@@ -25,3 +25,5 @@ Tasks:
 ## Dev Tools
 
 Set a timer for 20 minutes and explore some websites with the Dev Tools open. Just click around and see what stuff does. Have a look at the documentation if you are curious. There will be lessons coming up in the main course with more detail. If you want, the course linked above has a short section on the Dev Tools too.
+
+#Done
