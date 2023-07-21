@@ -25,3 +25,28 @@
  * support for it is not everywhere.
  */
 
+//using concatenation________________________________
+let myname = "Ugo";
+let greet = "Good day to you ";
+let friendname = "Bem";
+let familymember = "Toby";
+let datetoday = 7;
+let monthtoday = "July ";
+let yearnow = 2023;
+let myage = 12;
+
+let friendgreet = greet + friendname;
+let familygreet = greet + familymember;
+let friendgreettoday = monthtoday + datetoday + greet + friendname
+
+console.log(friendgreet)
+console.log(familygreet)
+console.log(friendgreettoday)
+console.log("In 20 years I will be ", myage + 20, " years old")
+
+
+//using interpolation_________________________________
+console.log($,{greet, friendname})
+console.log($,{greet, familymember})
+console.log($,{monthtoday, datetoday, greet, friendname})
+console.log("In 20 years I will be ",$,{myage}+20, " years old")

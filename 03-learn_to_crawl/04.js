@@ -20,6 +20,26 @@
  * that is demonstrated below. For the labels, be sure to come up 
  * with clear and descriptive names.
  */
+//let result = 0
+//console.log("Label", result)
 
-let result = 0
-console.log("Label", result)
+let varone = 1234;
+let vartwo = 5678;
+let varthree = 2468;
+let luckyNumber = 7;
+
+let sumthem = varone + vartwo + varthree + luckyNumber;
+let subtract = vartwo - (varone + varthree);
+let multip = varone * vartwo * varthree;
+let divy = vartwo / (varthree - varone);
+let modone = varone % luckyNumber;
+let modtwo = vartwo % luckyNumber;
+let modthree = varthree % luckyNumber; 
+
+console.log("The result of adding the numbers", sumthem)
+console.log("The result of subtracting the two smallest numbers from the larger one", subtract)
+console.log("The result of multiplying all the numbers", multip)
+console.log("The result of diving the largest by others", divy)
+console.log("The result of First number modulu luckynumber", modone)
+console.log("The result of Second number modulu luckynumber", modtwo)
+console.log("The result of Third number modulu luckynumber", modthree)
