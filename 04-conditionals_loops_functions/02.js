@@ -14,3 +14,26 @@
  * find both ways!
  *
  */
+
+//Question 1
+for (let i = 5; i <= 1000; i++){
+    console.log(i++)
+}
+
+//Question 2
+for (let i = -100; i <= 100; i++){
+    console.log(i)
+}
+
+//Question 3
+for (let a = 0; a <= 20; a++){
+    if (a%2 ==0){
+        console.log(a);
+    }else if (a%3 ==0){
+        console.log(a);
+    }
+}
+
+for (let a = 2; a % 2 == 0; a++){
+    console.log(a++)
+}
