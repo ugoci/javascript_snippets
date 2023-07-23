@@ -17,3 +17,86 @@
  *    function that takes an array as an argument and returns the sum. Use this
  *    function to log the sum of the two arrays of odd and even numbers.
  */
+
+//Question 1________________________
+let thingsinroom = ["chair", "screen", "plant"]
+
+//Question 2________________________
+let drawers = [
+    ["books", "pens", "pencils", "Highlighter", "Marker"], 
+    ["Stapler", "Eraser", "Calculator", "Glue", "Paper"], 
+    ["Envelope", "Keyboard", "Computer", "Fax", "Folder"]
+]
+
+//Question 3________________________
+console.log(drawers[0][0])
+console.log(drawers[0][2])
+console.log(drawers[1][2])
+console.log(drawers[1][4])
+console.log(drawers[2][2])
+
+//Question 4________________________
+for (let i = 1; i <= 100; i++){
+    console.log(i)
+}
+
+//Question 5________________________
+let newarray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100]
+let sum = 0
+for (i = 1; i < newarray.length; i++){
+    sum += newarray[i]
+}
+console.log(sum)
+
+//Question 6________________________
+//Random number generator
+function getRandomNumber(){
+    randnum = Math.floor((Math.random() * 100));
+    return newarray
+}
+
+//Random number generator but adds sequential numbers to the array
+function getRandomNumber(){
+    let newarray = [];
+    randnum = Math.floor((Math.random() * 100));
+    for (randnum = 0; randnum <= 100; randnum++){
+        newarray.push(randnum)
+    }
+    
+    return newarray
+}
+
+//Random number generator but adds only 1 random number to the array
+function getRandomNumber(){
+    let newarray = [];
+    randnum = Math.floor((Math.random() * 100));
+    newarray.push(randnum)
+    
+    return newarray
+}
+console.log(addtoarray());
+
+//Question 7________________________
+//TBC
+
+//Question 8________________________
+function getRandomNumber(){
+    let newarray = [];
+    randnum = Math.floor((Math.random() * 100));
+    for (randnum = 0; randnum <= 100; randnum++){
+        newarray.push(randnum)
+    }
+    return newarray
+}
+
+let anotherarray = [2,2,2]
+function sumarray(anotherarray){
+    let sumd = 0
+    for (i = 0; i < anotherarray.length; i++){
+        sumd += anotherarray
+        console.log(sumd)
+        return sumd
+    }
+}
+
+console.log(sumarray(anotherarray));

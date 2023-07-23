@@ -17,4 +17,14 @@ lengths = [
  */
 
 
+//Question 1________________________
+for (let i = 0; i < lengths.length; i++){
+    eachElement = lengths[i];
+}
 
+function CmToInch(eachElement){
+    inches = eachElement / 2.54;
+    return inches
+}
+
+console.log(CmToInch(eachElement));

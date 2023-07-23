@@ -70,3 +70,41 @@ stores =  [
     [ '4003IN', 'Target', 'IN', 'North', 'Attica' ],
     [ '4003KY', 'Target', 'KY', 'North', 'Ashland' ]
 ]
+
+//Question 1________________________
+for (i = 0; i < stores.length; i++){
+    console.log(stores[i][4])
+}
+
+//Question 2________________________
+for (i = 0; i < stores.length; i++){
+    if (stores[i][2] == "CA"){
+        console.log(stores[i][4])
+    }
+}
+
+//Question 3________________________
+for (i = 0; i < stores.length; i++){
+    let counter = 0
+    if (stores[i][1] == "Target"){
+        counter = counter + 1;
+        console.log(stores[i][1])
+    }
+}
+
+for (i = 0; i < stores.length; i++){
+    let counter = 0
+    if (stores[i][1] == "Target"){
+        counter = counter + 1;
+    }
+    console.log(counter)
+}
+
+for (i = 0; i < stores.length; i++){
+    let newerArray = []
+    if (stores[i][1] == "Target"){
+        eachItem = stores[i][1];
+    newerArray.push(eachItem);
+    }
+    console.log(newerArray)
+}
