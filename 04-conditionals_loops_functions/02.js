@@ -15,17 +15,17 @@
  *
  */
 
-//Question 1
-for (let i = 5; i <= 1000; i++){
-    console.log(i++)
+//Question 1________________________
+for (let i = 5; i < 1000; i = (i * 1) + 4){
+    console.log(i)
 }
 
-//Question 2
+//Question 2________________________
 for (let i = -100; i <= 100; i++){
     console.log(i)
 }
 
-//Question 3
+//Question 3________________________
 for (let a = 0; a <= 20; a++){
     if (a%2 ==0){
         console.log(a);
@@ -37,3 +37,27 @@ for (let a = 0; a <= 20; a++){
 for (let a = 2; a % 2 == 0; a++){
     console.log(a++)
 }
+
+//Pseudocode________________________
+//create a function that takes in the parameters
+//then uses the parameters to replace the counter 
+
+//Range function_____________________
+function range(start, end){
+    for (i = start; i < end; i++){
+        console.log(i)
+    }
+    return i
+}
+
+//Function to generate alternating numbers_____
+function generateAlternatingLoop(length, alternatingParams){
+    rangevar = range(0,1)
+    let currentParam = alternatingParams[rangevar];
+    for (i = 0; i < length; i = currentParam){
+        console.log(i);
+    }
+    return length, alternatingParams
+}
+
+console.log(generateAlternatingLoop(20, [+3, -1]));

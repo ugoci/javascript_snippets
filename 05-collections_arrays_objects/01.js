@@ -36,48 +36,54 @@ console.log(drawers[1][4])
 console.log(drawers[2][2])
 
 //Question 4________________________
-for (let i = 1; i <= 100; i++){
-    console.log(i)
+function generateSequentialArray(){
+    let newarray = [];
+    for (i = 0; i <= 100; i++){
+        let newnum = i;
+        newarray.push(newnum)
+    }
+    return newarray
 }
 
 //Question 5________________________
-let newarray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100]
+let newseqarray = generateSequentialArray()
 let sum = 0
-for (i = 1; i < newarray.length; i++){
-    sum += newarray[i]
+for (i = 1; i < newseqarray.length; i++){
+    sum += newseqarray[i]
 }
 console.log(sum)
 
 //Question 6________________________
-//Random number generator
 function getRandomNumber(){
-    randnum = Math.floor((Math.random() * 100));
-    return newarray
+    return Math.floor((Math.random() * 100));
 }
-
-//Random number generator but adds sequential numbers to the array
-function getRandomNumber(){
+    
+function addToArray(){
     let newarray = [];
-    randnum = Math.floor((Math.random() * 100));
-    for (randnum = 0; randnum <= 100; randnum++){
+    for (i = 0; i <= 100; i++){
+        let randnum = getRandomNumber();
         newarray.push(randnum)
     }
-    
     return newarray
 }
 
-//Random number generator but adds only 1 random number to the array
-function getRandomNumber(){
-    let newarray = [];
-    randnum = Math.floor((Math.random() * 100));
-    newarray.push(randnum)
-    
-    return newarray
-}
-console.log(addtoarray());
 
 //Question 7________________________
-//TBC
+let newrandarray = addToArray()
+console.log(newrandarray);
+let newevenarray = [];
+let newoddarray = [];
+for (i = 0; i < newrandarray.length; i++){
+    let eachnum = newrandarray[i];
+        if (i % 2 == 0){
+            newevenarray.push(eachnum)
+        }else if (i % 2 != 0){
+            newoddarray.push(eachnum)
+    }
+}
+
+console.log(newevenarray);
+console.log(newoddarray);
 
 //Question 8________________________
 function getRandomNumber(){
@@ -100,3 +106,9 @@ function sumarray(anotherarray){
 }
 
 console.log(sumarray(anotherarray));
+
+
+//
+
+
+    

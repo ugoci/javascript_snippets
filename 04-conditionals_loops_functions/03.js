@@ -37,31 +37,21 @@ while (a <= 20){
 }
 
 //Question 2
-/**function getRandomNumber(){
-    return Math.floor((Math.random() * 100) + 1);
-}
-*/
-//console.log(getRandomNumber());
-
 
 function getRandomNumber(){
     return Math.floor((Math.random() * 100) + 1);
 }
 
-/**let testvar = getRandomNumber()
+i = 0
+let testvar = getRandomNumber()
 while (testvar){
     if (testvar % 11 != 0){
-        console.log("Continue")
+        console.log(testvar);
     }else if (testvar % 11 == 0){
+        console.log("End");
         break
     }
 }
-*/
-let testvar = getRandomNumber()
-if (testvar % 11 != 0){
-    console.log("Continue");
-}else if (testvar % 11 == 0){
-    console.log("End");
-}
+
         
 console.log(getRandomNumber());
