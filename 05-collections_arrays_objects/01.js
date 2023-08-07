@@ -86,29 +86,14 @@ console.log(newevenarray);
 console.log(newoddarray);
 
 //Question 8________________________
-function getRandomNumber(){
-    let newarray = [];
-    randnum = Math.floor((Math.random() * 100));
-    for (randnum = 0; randnum <= 100; randnum++){
-        newarray.push(randnum)
-    }
-    return newarray
-}
 
-let anotherarray = [2,2,2]
 function sumarray(anotherarray){
     let sumd = 0
     for (i = 0; i < anotherarray.length; i++){
-        sumd += anotherarray
-        console.log(sumd)
-        return sumd
+        sumd += anotherarray[i]
     }
+    return sumd
 }
 
-console.log(sumarray(anotherarray));
-
-
-//
-
-
-    
+console.log(sumarray(newevenarray));
+console.log(sumarray(newoddarray));

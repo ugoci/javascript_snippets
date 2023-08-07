@@ -9,3 +9,32 @@
  * 5. Refactor: define the sum, count and average function as a separate
  *    function and pass it to the forEach functions as a name.
  */
+
+//Question 1________________________
+function getRandomNumber(){
+    return Math.floor((Math.random() * 100));
+}
+
+function addToArray(){
+    let newarray = [];
+    for (i = 0; i <= 100; i++){
+        let randnum = getRandomNumber();
+        newarray.push(randnum)
+    }
+    return newarray
+}
+
+console.log(addToArray());
+
+//Question 2________________________
+let randArray = addToArray();
+let sum = 0;
+
+randArray.forEach(theSum);
+
+function theSum(item){
+    sum += item;
+    return sum
+}
+
+console.log(theSum(randArray));

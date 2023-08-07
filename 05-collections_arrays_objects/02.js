@@ -18,13 +18,38 @@ lengths = [
 
 
 //Question 1________________________
+function CmToInch(){
+    let inchArray = [];
+    for (let i = 0; i < lengths.length; i++){
+        eachElement = lengths[i];
+        inches = eachElement / 2.54;
+        inchArray.push(inches)
+    }
+    return inchArray
+}
+
+console.log(CmToInch(lengths));
+
+//Question 2________________________
+
+let sumInches = 0;
+let sumCentimeres = 0;
+let inchArray = [];
+
+for (i = 1; i < lengths.length; i++){
+    sumInches += lengths[i];
+    averageInchLength = sumInches / lengths.length;
+}
+
 for (let i = 0; i < lengths.length; i++){
     eachElement = lengths[i];
-}
-
-function CmToInch(eachElement){
     inches = eachElement / 2.54;
-    return inches
+    inchArray.push(inches);
+    
+for (i = 1; i < inchArray.length; i++){
+    sumCentimeres += inchArray[i];
+    averageCentLength = sumCentimeres / inchArray.length;
+}
 }
 
-console.log(CmToInch(eachElement));
+console.log("The average length in cm is,", averageCentLength, "which is", sumInches, "in inches");

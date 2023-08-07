@@ -71,6 +71,8 @@ stores =  [
     [ '4003KY', 'Target', 'KY', 'North', 'Ashland' ]
 ]
 
+
+
 //Question 1________________________
 for (i = 0; i < stores.length; i++){
     console.log(stores[i][4])
@@ -84,27 +86,52 @@ for (i = 0; i < stores.length; i++){
 }
 
 //Question 3________________________
+let targetArray = []
 for (i = 0; i < stores.length; i++){
-    let counter = 0
     if (stores[i][1] == "Target"){
-        counter = counter + 1;
-        console.log(stores[i][1])
+        eachTargetStore = stores[i][1];
+        targetArray.push(eachTargetStore)
+        numberOfStores = targetArray.length 
     }
 }
 
-for (i = 0; i < stores.length; i++){
-    let counter = 0
-    if (stores[i][1] == "Target"){
-        counter = counter + 1;
-    }
-    console.log(counter)
-}
+//Question 4________________________
+let othertargetArray = []
+let applianceDirectArray = []
+let kMartArray = []
+let circuitCityArray = []
+let bestBuyArray = []
+
 
 for (i = 0; i < stores.length; i++){
-    let newerArray = []
     if (stores[i][1] == "Target"){
-        eachItem = stores[i][1];
-    newerArray.push(eachItem);
+        eachTargetStore = stores[i][1];
+        othertargetArray.push(eachTargetStore)
+        numberOfStores = othertargetArray.length 
+    }else if (stores[i][1] == "Appliance Direct"){
+        eachADStore = stores[i][1];
+        applianceDirectArray.push(eachADStore)
+        numberOfADStores = applianceDirectArray.length
+    }else if (stores[i][1] == "K-Mart"){
+        eachKMStore = stores[i][1];
+        kMartArray.push(eachKMStore)
+        numberOfKMStores = kMartArray.length
+    }else if (stores[i][1] == "Circuit City"){
+        eachCCStore = stores[i][1];
+        circuitCityArray.push(eachCCStore)
+        numberOfCCStores = circuitCityArray.length
+    }else if (stores[i][1] == "Best Buy"){
+        eachBBStore = stores[i][1];
+        bestBuyArray.push(eachBBStore)
+        numberOfBBStores = bestBuyArray.length
     }
-    console.log(newerArray)
 }
+
+
+//console.log(numberOfStores)
+//console.log(numberOfADStores)
+//console.log(numberOfKMStores)
+//console.log(numberOfCCStores)
+//console.log(numberOfBBStores)
+
+console.log("There are", numberOfStores, "Target stores,", numberOfBBStores, "Best Buy stores,", numberOfKMStores, "K-Mart stores,", numberOfCCStores, "Circuit City stores, and", numberOfADStores, "Appliance Direct stores")
