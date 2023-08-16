@@ -28,13 +28,47 @@ console.log(addToArray());
 
 //Question 2________________________
 let randArray = addToArray();
+console.log(randArray);
 let sum = 0;
 
 randArray.forEach(theSum);
 
 function theSum(item){
     sum += item;
-    return sum
+    console.log(sum)
+    return sum;
 }
 
 console.log(theSum(randArray));
+
+
+//Question 3________________________
+let halfTheArray = addToArray();
+console.log(halfTheArray);
+
+halfTheArray.forEach(halfInt);
+
+function halfInt(item){
+    halves = item / 2;
+    console.log(halves)
+    return halves;
+}
+
+console.log(theSum(halfTheArray));
+
+
+//Question 4________________________
+let averageOfArray = addToArray();
+console.log(averageOfArray);
+let total = 0;
+
+averageOfArray.forEach(calcAverage);
+
+function calcAverage(item){
+    total += item;
+    let theAverage  = total / item.length;
+    console.log(theAverage)
+    return theAverage;
+}
+
+console.log(calcAverage(averageOfArray));
