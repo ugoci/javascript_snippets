@@ -33,12 +33,54 @@ style="font-size:16px;">
                 Converter  
             </h2>
             <p>
-                Select unit<br>
-                Input number<br>
-                Convert to<br>
-                Select unit<br>
-                Display result<br>
+                Intstructions to use the converter<br>
+                1. Select the units that you want to convert to<br>
+                2. Input the figure that you want to conver<br>
+                3. Click on the 'Convert' button<br>
+                4. See the conversion displayed below<br>
+                <br>
+                
+                <label for="Conversions">Available conversions: </label><br>
+                <select name="Conversions" id="Conversions">
+                    <option value="Kelvin to Celsius">Kelvin to Celsius</option>
+                    <option value="Celsius to Kelvin">Celsius to Kelvin</option>
+                    <option value="Farenheit to Kelvin">Farenheit to Kelvin</option>
+                    <option value="Kelvin to Farenheit">Kelvin to Farenheit</option>
+                    <option value="Miles to Kilometers">Miles to Kilometers</option>
+                    <option value="Kilometers to Miles">Kilometers to Miles</option>
+                    <option value="Inches to Centimeters">Inches to Centimeters</option>
+                    <option value="Centimeters to Inches">Centimeters to Inches</option>
+                </select><br>
+                <br>
 
+                Input number: 
+                <label for="Input Data:"></label>
+                <input type="text" id="Input Data" name="Input Data" placeholder="Input here"
+                maxlength="20"><br>
+                <br>
+                <button id="convertbtn">Convert</button><br>
+                <script src="converters.js"></script><br>
+                Display result<br>
+                <br>
+                <br>
+                <br>
+            </p>
+
+            <p id="test">
+                <script>
+                    let convbtn = document.getElementById("convertbtn");
+                    let useroption = document.getElementById("Conversions");
+                    let kelvin = document.getElementById("Input Data");
+                    
+                    convbtn.addEventListener('click', function onClick(event){
+                        
+                        if (useroption === "Kelvin to Celsius"){
+                            celsius = kelvin - 273.15;
+                            document.getElementById("test").innerHTML = "Hey there";
+                        }
+                    })                    
+                    
+                </script>
             </p>
 
 
@@ -60,3 +102,5 @@ style="font-size:16px;">
 </body>
 
 </html>
+
+

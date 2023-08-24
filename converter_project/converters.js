@@ -1,4 +1,3 @@
-
 //KtoC = K - 273.15____________________________
 function KtoC(kelvin){
     celsius = kelvin - 273.15;
@@ -55,19 +54,3 @@ function CmToInch(centimeter){
     return inches
 }
 
-//____________________________
-
-console.log(KtoC(272));
-console.log(CtoK(0));
-console.log(FtoK(30));
-console.log(KtoF(100));
-
-console.log(pythagoras(10, 20));
-console.log(pythagoras(30, 100));
-console.log(pythagoras(20, 50));
-
-console.log(MToKm(100));
-console.log(KmToM(25));
-
-console.log(inchToCm(10));
-console.log(CmToInch(425));
