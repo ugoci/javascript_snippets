@@ -66,22 +66,21 @@ style="font-size:16px;">
                 <br>
             </p>
 
-            <p id="test">
-                <script>
-                    let convbtn = document.getElementById("convertbtn");
-                    let useroption = document.getElementById("Conversions");
-                    let kelvin = document.getElementById("Input Data");
-                    
-                    convbtn.addEventListener('click', function onClick(event){
-                        
-                        if (useroption === "Kelvin to Celsius"){
-                            celsius = kelvin - 273.15;
-                            document.getElementById("test").innerHTML = "Hey there";
-                        }
-                    })                    
-                    
-                </script>
-            </p>
+            <p id="test"></p>
+            <script>
+                let convbtn = document.getElementById("convertbtn");
+                let userInput = document.getElementById("Input Data");
+                let useroption = document.getSelection("Conversions");
+                get
+                convbtn.addEventListener('click', function onClick(event){
+                    const useroption = document.body.label.useroption
+                    if (useroption === "Kelvin to Celsius"){
+                        celsius = userInput - 273.15;
+                        document.getElementById("test").innerHTML = "Hey there";
+                    }
+                })
+            </script>
+            
 
 
             <button id="mainBtn">Dark Mode</button>
