@@ -1,6 +1,6 @@
-# JAVASCRIPT LABS
+# javaScript snippets
 
-Fork this repository and then clone it to your machine.
+A range of code snippets for different tasks, some more playful than others.
 
 
 
